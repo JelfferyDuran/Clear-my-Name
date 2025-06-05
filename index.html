@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ClearMyName.ai</title>
+  <style>
+    body { font-family: sans-serif; background-color: #f4f4f4; padding: 20px; }
+    form { background: white; padding: 20px; border-radius: 8px; max-width: 600px; margin: auto; }
+    input { width: 100%; margin-bottom: 10px; padding: 8px; }
+    button { background: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">ClearMyName.ai - Identity Reclamation</h2>
+  <form method="POST">
+    <label>Full Name</label><input type="text" name="name" required />
+    <label>Date of Birth</label><input type="text" name="dob" placeholder="MM/DD/YYYY" required />
+    <label>SSN Last 4 Digits</label><input type="text" name="ssn4" maxlength="4" required />
+    <label>Address</label><input type="text" name="address" required />
+    <label>Email</label><input type="email" name="email" required />
+    <button type="submit">Generate Legal Letters</button>
+  </form>
+</body>
+</html>
